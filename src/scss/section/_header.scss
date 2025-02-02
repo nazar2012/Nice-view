@@ -19,11 +19,25 @@
 
 .header__list {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    margin-left: 145px;
-    margin-right: 144px;
+
+    @media screen and (max-width: 702px) {
+        display: none !important;
+    }
+
+    @media screen and (min-width: 703px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        margin-left: 80px;
+        margin-right: 0;
+    }
+
+    @media screen and (min-width: 1144px){
+        gap: 48px;
+        margin-left: 145px;
+        margin-right: 144px;
+    }
 }
 
 .header__title {
