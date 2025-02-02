@@ -28,9 +28,9 @@ address {
 }
 
 .container {
-  max-width: 1136px;
+  max-width: 1144px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 15px;
   outline: 1px solid red;
 }
 @media screen and (min-width: 277px) {
@@ -38,14 +38,14 @@ address {
     width: 277px;
   }
 }
-@media screen and (min-width: 693px) {
+@media screen and (min-width: 703px) {
   .container {
-    width: 693px;
+    width: 703px;
   }
 }
-@media screen and (min-width: 1136px) {
+@media screen and (min-width: 1144px) {
   .container {
-    width: 1136px;
+    width: 1144px;
   }
 }
 
