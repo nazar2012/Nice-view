@@ -47,6 +47,9 @@
     height: 56px;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 702px) {
+        margin-right: auto;
+    }
 }
 
 .header__link {
@@ -77,5 +80,12 @@
         font-weight: 300;
         line-height: normal;
     }
+}
 
+.header__menu{
+    @media screen and (max-width: 702px) {
+        width: 24px;
+        height: 24px;
+        fill: #FCFCFB;
+    }
 }
