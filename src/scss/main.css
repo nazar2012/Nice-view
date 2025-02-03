@@ -105,6 +105,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 702px) {
+  .header__title {
+    margin-right: auto;
+  }
+}
 
 .header__link {
   color: var(--button-background, #FCFCFB);
@@ -134,5 +139,13 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+  }
+}
+
+@media screen and (max-width: 702px) {
+  .header__menu {
+    width: 24px;
+    height: 24px;
+    fill: #FCFCFB;
   }
 }/*# sourceMappingURL=main.css.map */
