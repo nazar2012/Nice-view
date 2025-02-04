@@ -142,10 +142,13 @@ body {
   }
 }
 
-@media screen and (max-width: 702px) {
+.header__menu {
+  width: 24px;
+  height: 24px;
+  fill: #FCFCFB;
+}
+@media screen and (min-width: 703px) {
   .header__menu {
-    width: 24px;
-    height: 24px;
-    fill: #FCFCFB;
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
