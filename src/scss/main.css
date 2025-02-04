@@ -135,4 +135,15 @@ body {
     font-weight: 300;
     line-height: normal;
   }
+}
+
+.header__icon {
+  width: 24px;
+  height: 24px;
+  fill: #FCFCFB;
+}
+@media screen and (min-width: 703px) {
+  .header__icon {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
