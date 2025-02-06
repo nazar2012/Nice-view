@@ -1,14 +1,14 @@
-@import "./base/reset";
-@import "./base/varieble";
-@import "./base/container";
-@import "./base/comman";
+@use "./base/reset";
+@use "./base/varieble";
+@use "./base/container";
+@use "./base/comman";
 
-@import "./section/header";
-@import "./section/mobil-menu";
-@import "./section/hero";
-@import "./section/company";
-@import "./section/apartament";
-@import "./section/infrastructure";
-@import "./section/gallery";
-@import "./section/get-in-touch";
-@import "./section/footer";
+@use "./section/header";
+// @use "./section/mobil-menu";
+@use "./section/hero";
+@use "./section/company";
+@use "./section/apartament";
+@use "./section/infrastructure";
+@use "./section/gallery";
+@use "./section/get-in-touch";
+@use "./section/footer";
