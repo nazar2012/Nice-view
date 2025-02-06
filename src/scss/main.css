@@ -142,6 +142,16 @@ body {
   }
 }
 
+.header__button {
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+
 .header__menu {
   width: 24px;
   height: 24px;
@@ -151,4 +161,16 @@ body {
   .header__menu {
     display: none;
   }
+}
+
+.phone {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  left: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
