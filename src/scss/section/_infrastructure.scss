@@ -1,0 +1,19 @@
+.infrastructure {
+    padding-top: 60px;
+
+    @media screen and (min-width: 703px) {
+        padding-top: 100px;
+    }
+
+    &__logo {
+        color: $accent-color;
+        font-family: Poppins;
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 24px;
+
+        @media screen and (min-width: 1144px) {
+            margin-bottom: 20px;
+        }
+    }
+}
