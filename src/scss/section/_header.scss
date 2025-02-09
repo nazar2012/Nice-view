@@ -3,7 +3,7 @@
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     background: var(--header, linear-gradient(269deg, #2D2A22 20.66%, #7E6D53 85.22%));
     padding: 22px 0;
     display: flex;
@@ -15,6 +15,8 @@
 .header__div {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     position: relative;
 }
 
@@ -92,7 +94,8 @@
     width: 24px;
     height: 24px;
     fill: #FCFCFB;
-    margin-left: 220px;
+    margin-left: auto !important;
+    margin-right: 0;
 
     @media screen and (min-width: 703px) {
         display: none;
