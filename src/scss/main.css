@@ -227,4 +227,11 @@ body {
   .infrastructure__logo {
     margin-bottom: 20px;
   }
+}
+.infrastructure__texts {
+  color: #7E6D53;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */

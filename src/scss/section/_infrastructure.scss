@@ -16,4 +16,12 @@
             margin-bottom: 20px;
         }
     }
+
+    &__texts {
+        color: $accent-color;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+    }
 }
