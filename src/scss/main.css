@@ -210,6 +210,7 @@ body {
 
 .infrastructure {
   padding-top: 60px;
+  background-color: #EDE9E3;
 }
 @media screen and (min-width: 703px) {
   .infrastructure {
@@ -218,13 +219,110 @@ body {
 }
 .infrastructure__logo {
   color: #7E6D53;
-  font-family: Poppins;
   font-size: 28px;
   font-weight: 500;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 703px) {
+  .infrastructure__logo {
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
 @media screen and (min-width: 1144px) {
   .infrastructure__logo {
     margin-bottom: 20px;
+  }
+}
+.infrastructure__list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  background-image: url(../../img/infra.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px;
+  position: relative;
+}
+@media screen and (min-width: 703px) {
+  .infrastructure__list {
+    height: 486px;
+  }
+}
+.infrastructure__span {
+  position: absolute;
+  border-radius: 8px;
+  opacity: 0.8;
+  background: #FCFCFB;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3px;
+  margin-left: auto;
+  align-items: center;
+  padding: 20px 8px;
+}
+@media screen and (min-width: 703px) {
+  .infrastructure__span {
+    margin-right: 37px;
+    padding: 24px 32px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1144px) {
+  .infrastructure__span {
+    margin-right: 168px;
+  }
+}
+.infrastructure__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (min-width: 703px) {
+  .infrastructure__item {
+    gap: 14px;
+  }
+}
+.infrastructure__text {
+  color: #2D2A22;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  width: 72px;
+}
+@media screen and (min-width: 703px) {
+  .infrastructure__text {
+    font-size: 16px;
+  }
+}
+.infrastructure__circle {
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+  border: 1px solid #2D2A22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 703px) {
+  .infrastructure__circle {
+    width: 120px;
+    height: 120px;
+  }
+}
+.infrastructure__texts {
+  color: #7E6D53;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 150px;
+  text-align: center;
+}
+@media screen and (min-width: 703px) {
+  .infrastructure__texts {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
