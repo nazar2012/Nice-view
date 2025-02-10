@@ -1,0 +1,119 @@
+.touch {
+  &__logo {
+    color: $accent-color;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1,5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+
+    @media screen and (min-width: 703px) {
+        font-size: 40px;
+    }
+  }
+
+  &__text {
+    color: $accent-color;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 703px) {
+        font-size: 24px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: center; /* Центрує вміст по вертикалі */;
+    align-items: flex-start;
+    gap: 22px;
+    border-radius: 16px;
+    background-color: $accent-color;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 703px) {
+        flex-direction: row;
+        gap: 68px;
+        padding: 53px 74px;
+        justify-content: center; /* Центрує контент */
+    }
+
+     @media screen and (min-width: 1144px) {
+        width: 700px;
+        flex-direction: row;
+        gap: 64px;
+        padding: 53px 74px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    width: 240px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+
+  &__item {
+    display: flex;
+    width: 240px;
+    height: 24px;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  &__svg {
+    width: 24px;
+    height: 24px;
+    fill: $button-color;
+  }
+
+  &__link {
+    color: $main-backround;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1, 5;
+  }
+
+  &__btn {
+    color: var(--button-text, #2d2a22);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: 1, 3;
+    font-weight: 300;
+    line-height: normal;
+
+    display: flex;
+    width: 240px;
+    height: 48px;
+    padding: 14px 76px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: $button-color;
+
+    @media screen and (min-width: 703px) {
+        margin: auto 0;
+    }
+  }
+}
