@@ -1,0 +1,123 @@
+.gallery {
+    padding-top: 60px;
+    background-color: $background-color;
+
+    @media screen and (min-width: 703px) {
+        padding-top: 100px;
+    }
+
+
+    &__title {
+        color: $accent-color;
+font-size: 40px;
+font-weight: 500;
+margin-bottom: 24px;
+
+@media screen and (min-width: 1144px) {
+    margin-bottom: 20px;
+    }
+    }
+
+    &__position {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4px;
+
+        @media screen and (min-width: 703px) {
+            margin-bottom: 8px;
+        }
+        
+        @media screen and (min-width: 1144px) {
+        gap: 36px;
+        margin-bottom: 14px;
+        }
+    }
+
+
+    &__item {
+        width: 77px;
+height: 130px;
+margin-top: 22px;
+
+@media screen and (min-width: 703px) {
+    width: 152px;
+height: 232px;
+margin-top: 56px;
+}
+
+@media screen and (min-width: 1144px) {
+        width: 196px;
+height: 346px;
+margin-top: 83px;  
+}
+    }
+
+    &__itemcenter {
+        width: 159px;
+height: 174px;  
+
+        @media screen and (min-width: 703px) {
+            width: 364px;
+            height: 395px;
+        }
+        
+        @media screen and (min-width: 1144px) {
+        width: 556px;
+        height: 589px;
+        }
+    }
+
+
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+
+        @media screen and (min-width: 703px) {
+            gap: 18px;
+        }
+        
+        @media screen and (min-width: 1144px) {
+        gap: 32px;
+        }
+    }
+
+
+    &__svg {
+        opacity: 0;
+        display: none;
+
+@media screen and (min-width: 703px) {
+    opacity: 1;
+    display: block;
+        width: 30px;
+height: 32px;
+    }
+    }
+
+    &__svg:hover {
+        fill: $accent-color;
+    }
+
+
+
+    &__navigation {
+        width: 48px;
+height: 8px;
+fill: $navigation-color;
+
+@media screen and (min-width: 703px) {
+        width: 64px;
+        height: 11px;
+    }
+
+    }
+}
