@@ -43,7 +43,7 @@
     margin-right: auto;
 
     @media screen and (min-width: 277px) and (max-width: 702px) {
-      width: 250px;
+      width: 180px;
     }
 
     @media screen and (min-width: 703px) {
@@ -59,10 +59,11 @@
   &__btn {
     color: $added-text;
     font-family: Poppins;
+    border: none;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5;
-    padding: 14px 28px;
+    padding: 10px 60px;
     border-radius: 16px;
     background: $button-color;
 
