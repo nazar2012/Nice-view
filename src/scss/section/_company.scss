@@ -1,0 +1,67 @@
+.company {
+    background: $background-color;
+    background-image: url(../img/background-company.webp);
+    margin-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 325px;
+
+    &__back {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    &__group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        padding: 44px 0;
+    }
+
+    &__svglist {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 92px;
+    }
+
+    &__item {
+        flex-basis: calc(50% - 40px); /* Каждый элемент занимает 50% ширины с учетом отступов */
+    }
+
+    &__iconsvg {
+        width: 32px;
+height: 32px;
+fill: $logo-color;
+fill: none;
+stroke: black;
+margin-bottom: 24px;
+    }
+
+    &__text {
+        color: $accent-color;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+    }
+
+    &__title {
+        color: $added-text;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+margin-bottom: 16px;
+    }
+
+    &__discript {
+        color: $accent-color;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+width: 393px;
+    }
+}
+
+body {
+    background-color: $background-color;
+}
