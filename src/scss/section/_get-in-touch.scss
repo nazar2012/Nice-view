@@ -82,7 +82,8 @@
   &__svg {
     width: 24px;
     height: 24px;
-    fill: $button-color;
+    fill: none;
+    stroke: $button-color;
   }
 
   &__link {
