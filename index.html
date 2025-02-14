@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script type="module" crossorigin src="/Nice-view/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Nice-view/assets/index-8afbb0b7.css">
+    <link rel="stylesheet" href="/Nice-view/assets/index-f69de78b.css">
   </head>
   <body>
 
@@ -24,10 +24,10 @@
         <ul class="header__list">
             <li class="header__item"><a href="#" class="header__link">Home</a></li>
             <li class="header__item"><a href="#" class="header__link">About</a></li>
-            <li class="header__item"><a href="#" class="header__link">Apartments</a></li>
-            <li class="header__item"><a href="#" class="header__link">Infrastructure</a></li>
-            <li class="header__item"><a href="#" class="header__link">Gallery</a></li>
-            <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+            <li class="header__item"><a href="#apartament" class="header__link">Apartments</a></li>
+            <li class="header__item"><a href="#infrastructure" class="header__link">Infrastructure</a></li>
+            <li class="header__item"><a href="#gallery" class="header__link">Gallery</a></li>
+            <li class="header__item"><a href="#touch" class="header__link">Contacts</a></li>
         </ul>
         <button type="button" class="header__btn">Contact us</button>
         <button type="button" class="header__button" data-modal-header-open>
@@ -134,7 +134,7 @@
     </div>
     </div>
 </section>
-    <section class="apartament">
+    <section id="apartament" class="apartament">
   <div class="container">
     <h1 class="apartament__title">Choose your apartment</h1>
     
@@ -163,7 +163,7 @@
   </div>
 </section>
 
-    <section class="infrastructure">
+    <section id="infrastructure" class="infrastructure">
     <div class="container">
         <h2 class="infrastructure__logo">Infrastructure</h2>
         <ul class="infrastructure__list">
@@ -190,7 +190,7 @@
         </ul>
     </div>
 </section>
-    <section class="gallery">
+    <section id="gallery" class="gallery">
     <div class="container">
                 <h2 class="gallery__title">Gallery</h2>
         <div class="gallery__position">
@@ -215,7 +215,7 @@
     
 </section>
 
-    <section class="touch">
+    <section id="touch" class="touch">
     <div class="container">
         <h3 class="touch__logo">Get in touch!</h3>
         <p class="touch__text">Contact us for a quote.</p>
@@ -246,8 +246,10 @@
 </section>
     <footer class="footer">
     <div class="container">
-        <a class="footer__logo" href="">NICE VIEW</a>
         <ul class="footer__nav">
+            <li class="footer__item">
+                <a class="footer__logo" href="">NICE VIEW</a>
+            </li>
             <li class="footer__item">
                 <h2 class="footer__title">Navigation</h2>
                 <ul class="footer__roster">
@@ -263,35 +265,35 @@
                 <ul class="footer__roster">
                     <li class="footer__items"><a href="" class="footer__link">(406) 555-0120</a></li>
                     <li class="footer__items"><a href="" class="footer__link">ul. Chodkiewicza Karola 111, Chorzów </a></li>
-                    <li class="footer__items"><a href="" class="footer__link">deanna.curtis@example.com</a></li>
+                    <li class="footer__items"><a href="" class="footer__link">deanna.curtis@ <br class="footer__br"> example.com</a></li>
                 </ul>
             </li>
             <li class="footer__item">
-                <ul class="footer__roster">
+                <ul class="footer__rosters">
                     <li class="footer__items">
                         <svg class="footer__svg">
-                            <use class=""></use>
+                            <use href="/Nice-view/assets/symbol-defs-af7845dc.svg#youtube"></use>
                         </svg>
                     </li>
                     <li class="footer__items">
                         <svg class="footer__svg">
-                            <use class=""></use>
+                            <use href="/Nice-view/assets/symbol-defs-af7845dc.svg#instagram"></use>
                         </svg>
                     </li>
                     <li class="footer__items">
                         <svg class="footer__svg">
-                            <use class=""></use>
+                            <use href="/Nice-view/assets/symbol-defs-af7845dc.svg#twitter"></use>
                         </svg>
                     </li>
                     <li class="footer__items">
                         <svg class="footer__svg">
-                            <use class=""></use>
+                            <use href="/Nice-view/assets/symbol-defs-af7845dc.svg#facebook"></use>
                         </svg>
                     </li>
                 </ul>
             </li>
         </ul>
-        <p class="footer__addres">By using this website, you agree to the <span>Terms of Service </span>and<span> Privacy Policy</span></p>
+        <p class="footer__address">By using this website, you agree to the <span class="footer__span">Terms of Service</span> and <span class="footer__span">Privacy Policy</span></p>
     </div>
 </footer>
 
