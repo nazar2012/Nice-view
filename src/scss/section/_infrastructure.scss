@@ -30,7 +30,7 @@
         height: 420px;
         position: relative;
 
-        background-image: url(../../img/mobile/infra-mobile@1x.webp);
+        background-image: url(./img/mobile/infra-mobile@1x.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -39,27 +39,27 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: url(../../img/mobile/infra-mobile@2x.webp);
+            background-image: url(./img/mobile/infra-mobile@2x.webp);
         }
 
         @media screen and (min-width: 703px) {
             height: 486px;
-            background-image: url(../../img/tablet/infra-tablet@1x.webp);
+            background-image: url(./img/tablet/infra-tablet@1x.webp);
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../../img/tablet/infra-tablet@2x.webp);
+                background-image: url(./img/tablet/infra-tablet@2x.webp);
             }
         }
 
         @media screen and (min-width: 1144px) {
-            background-image: url(../../img/desktop/infra-desktop@1x.webp);
+            background-image: url(./img/desktop/infra-desktop@1x.webp);
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url(../../img/desktop/infra-desktop@2x.webp);
+                background-image: url(./img/desktop/infra-desktop@2x.webp);
             }
         }
     }
