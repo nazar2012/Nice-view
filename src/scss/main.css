@@ -65,15 +65,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .header__div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 280px;
   position: relative;
+}
+@media screen and (min-width: 703px) {
+  .header__div {
+    width: 694px;
+  }
+}
+@media screen and (min-width: 1144px) {
+  .header__div {
+    width: 1144px;
+  }
 }
 
 .header__list {
@@ -466,16 +476,38 @@ body {
   flex-direction: column;
   align-items: end;
   justify-content: center;
-  background-image: url(../img/infra.webp);
+  height: 420px;
+  position: relative;
+  background-image: url(../img/mobile/infra-mobile@1x.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 420px;
-  position: relative;
+  text-align: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .infrastructure__list {
+    background-image: url(../img/mobile/infra-mobile@2x.webp);
+  }
 }
 @media screen and (min-width: 703px) {
   .infrastructure__list {
     height: 486px;
+    background-image: url(../img/tablet/infra-tablet@1x.webp);
+  }
+}
+@media screen and (min-width: 703px) and (min-device-pixel-ratio: 2), screen and (min-width: 703px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 703px) and (min-resolution: 192dpi), screen and (min-width: 703px) and (min-resolution: 2dppx) {
+  .infrastructure__list {
+    background-image: url(../img/tablet/infra-tablet@2x.webp);
+  }
+}
+@media screen and (min-width: 1144px) {
+  .infrastructure__list {
+    background-image: url(../img/desktop/infra-desktop@1x.webp);
+  }
+}
+@media screen and (min-width: 1144px) and (min-device-pixel-ratio: 2), screen and (min-width: 1144px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1144px) and (min-resolution: 192dpi), screen and (min-width: 1144px) and (min-resolution: 2dppx) {
+  .infrastructure__list {
+    background-image: url(../img/desktop/infra-desktop@2x.webp);
   }
 }
 .infrastructure__span {
@@ -710,7 +742,7 @@ body {
   display: flex;
   padding: 24px 20px;
   flex-direction: column;
-  align-items: center; /* Центрує вміст по вертикалі */
+  align-items: center;
   align-items: flex-start;
   gap: 22px;
   border-radius: 16px;
@@ -722,7 +754,7 @@ body {
     flex-direction: row;
     gap: 68px;
     padding: 53px 74px;
-    justify-content: center; /* Центрує контент */
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1144px) {
