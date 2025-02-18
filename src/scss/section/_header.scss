@@ -9,15 +9,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .header__div {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 280px;
     position: relative;
+
+    @media screen and (min-width: 703px) {
+        width: 694px;
+    }
+    @media screen and (min-width: 1144px) {
+        width: 1144px;
+    }
 }
 
 .header__list {
