@@ -52,40 +52,40 @@
   }
 
   &__text {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
     color: $added-text;
   }
 
   &__subtitle {
-    font-size: 16px;
+    font-size: 20px;
     color: $accent-color;
   }
 
   &__container {
     width: 100%;
-    /* Растягиваем контейнер на всю ширину */
+
     display: flex;
     justify-content: center;
-    /* Центрируем кнопку */
+
     margin-top: 40px;
 
   }
 
   &__btn {
     background: $accent-color;
-    /* Цвет кнопки */
+
     color: white;
-    padding: 14px 28px;
+    padding: 16px 28px;
     border: none;
     border-radius: 16px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 45px;
     width: 200px;
   }
 
