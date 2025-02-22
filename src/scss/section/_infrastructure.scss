@@ -2,7 +2,7 @@
     padding-top: 60px;
     background-color: #EDE9E3;
 
-    @media screen and (min-width: 703px) {
+    @media screen and (min-width: 736px) {
         padding-top: 100px;
     }
 
@@ -12,12 +12,12 @@
         font-weight: 500;
         margin-bottom: 24px;
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             font-size: 40px;
             font-weight: 500;
         }
 
-        @media screen and (min-width: 1144px) {
+        @media screen and (min-width: 1176px) {
             margin-bottom: 20px;
         }
     }
@@ -42,7 +42,7 @@
             background-image: url(../img/mobile/infra-mobile@2x.webp);
         }
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             height: 486px;
             background-image: url(../img/tablet/infra-tablet@1x.webp);
 
@@ -53,7 +53,7 @@
             }
         }
 
-        @media screen and (min-width: 1144px) {
+        @media screen and (min-width: 1176px) {
             background-image: url(../img/desktop/infra-desktop@1x.webp);
 
             @media (min-device-pixel-ratio: 2),
@@ -76,13 +76,13 @@
         align-items: center;
         padding: 20px 8px;
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             margin-right: 37px;
             padding: 24px 32px;
             gap: 30px;
         }
 
-        @media screen and (min-width: 1144px) {
+        @media screen and (min-width: 1176px) {
             margin-right: 168px;
         }
     }
@@ -93,7 +93,7 @@
         justify-content: center;
         width: 100%;
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             gap: 14px;
         }
     }
@@ -105,7 +105,7 @@
         font-weight: 600;
         width: 72px;
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             font-size: 16px;
         }
     }
@@ -120,7 +120,7 @@
         justify-content: center;
         text-align: center;
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             width: 120px;
             height: 120px;
         }
@@ -133,7 +133,7 @@
         min-width: 150px;
         text-align: center;
 
-        @media screen and (min-width: 703px) {
+        @media screen and (min-width: 736px) {
             font-size: 16px;
         }
     }
