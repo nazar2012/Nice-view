@@ -26,10 +26,9 @@
 
 
   &__item {
-    background: white;
+    background: rgb(252, 252, 251);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 250px;
     text-align: center;
     transition: 0.3s;
@@ -43,6 +42,7 @@
   &__item:hover {
     border-color: $accent-color;
     transform: translateY(-5px);
+    cursor: pointer;
   }
 
   &__img {
@@ -52,15 +52,18 @@
   }
 
   &__text {
-    font-size: 22px;
-    font-weight: bold;
     margin: 10px 0;
     color: $added-text;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 120.5%;
   }
 
   &__subtitle {
-    font-size: 20px;
     color: $accent-color;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
   }
 
   &__container {
@@ -75,8 +78,7 @@
 
   &__btn {
     background: $accent-color;
-
-    color: white;
+    color: $main-backround;
     padding: 16px 28px;
     border: none;
     border-radius: 16px;
