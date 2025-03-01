@@ -11,16 +11,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script type="module" crossorigin src="/Nice-view/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Nice-view/assets/index-3d1a37da.css">
+    <link rel="stylesheet" href="/Nice-view/assets/index-4364aba3.css">
   </head>
   <body>
 
     <!-- Loads the specified .html file -->
-    <link rel="stylesheet" href="../css/reset.css">
-<link rel="stylesheet" href="../scss/section/_header.scss">
-<header class="header">
+    <header class="header">
     <div class="container header__div">
-        <a class="header__title">NICE VIEW</a>
+        <a href="../index.html" class="header__title">NICE VIEW</a>
         <ul class="header__list">
             <li class="header__item"><a href="#" class="header__link">Home</a></li>
             <li class="header__item"><a href="#" class="header__link">About</a></li>
@@ -33,7 +31,7 @@
         <button type="button" class="header__button" data-modal-header-open>
             <svg class="header__menu">
                 <use href="/Nice-view/assets/symbol-defs-af7845dc.svg#vector"></use>
-            </svg>   
+            </svg>
         </button>
         <div class="phone is-hidden container" data-header-modal>
             <ul class="phone__list">
@@ -116,32 +114,31 @@
     <section id="apartament" class="apartament">
   <div class="container">
     <h1 class="apartament__title">Choose your apartment</h1>
-    
-    <div class="apartament__list">
-      <div class="apartament__item">
+
+    <ul class="apartament__list">
+      <li class="apartament__item">
         <img class="apartament__img" src="/Nice-view/assets/apartament-1ce170f5.png" alt="apartament">
         <p class="apartament__text">Type 1</p>
-        <h2 class="apartament__subtitle">Total area 23 meters</h2>
-      </div>
+        <p class="apartament__subtitle">Total area 23 meters</p>
+      </li>
 
-      <div class="apartament__item">
+      <li class="apartament__item">
         <img class="apartament__img" src="/Nice-view/assets/type-95fac9bd.png" alt="type">
         <p class="apartament__text">Type 2</p>
-        <h2 class="apartament__subtitle">Total area 27 meters</h2>
-      </div>
+        <p class="apartament__subtitle">Total area 27 meters</p>
+      </li>
 
-      <div class="apartament__item">
+      <li class="apartament__item">
         <img class="apartament__img" src="/Nice-view/assets/area-34c5fc33.png" alt="area">
         <p class="apartament__text">Type 3</p>
-        <h2 class="apartament__subtitle">Total area 31 meters</h2>
-      </div>
-    </div>
+        <p class="apartament__subtitle">Total area 31 meters</p>
+      </li>
+    </ul>
     <div class="apartament__container">
-    <button class="apartament__btn " type="button">Download catalog</button>
+      <button class="apartament__btn " type="button">Download catalog</button>
     </div>
   </div>
 </section>
-
     <section id="infrastructure" class="infrastructure">
     <div class="container">
         <h2 class="infrastructure__logo">Infrastructure</h2>
@@ -248,24 +245,28 @@
     <div class="container">
         <ul class="footer__nav">
             <li class="footer__item">
-                <a class="footer__logo" href="">NICE VIEW</a>
+                <a class="footer__logo" href="../index.html">NICE VIEW</a>
             </li>
             <li class="footer__item">
                 <h2 class="footer__title">Navigation</h2>
                 <ul class="footer__roster">
-                    <li class="footer__items"><a href="" class="footer__link">Home</a></li>
-                    <li class="footer__items"><a href="" class="footer__link">About</a></li>
-                    <li class="footer__items"><a href="" class="footer__link">Apartments</a></li>
-                    <li class="footer__items"><a href="" class="footer__link">Infrastructure</a></li>
-                    <li class="footer__items"><a href="" class="footer__link">Gallery</a></li>
+                    <li class="footer__items"><a href="#" class="footer__link">Home</a></li>
+                    <li class="footer__items"><a href="#" class="footer__link">About</a></li>
+                    <li class="footer__items"><a href="#apartament" class="footer__link">Apartments</a></li>
+                    <li class="footer__items"><a href="#infrastructure" class="footer__link">Infrastructure</a></li>
+                    <li class="footer__items"><a href="#gallery" class="footer__link">Gallery</a></li>
+                    <li class="footer__items"><a href="#touch" class="footer__link">Contacts</a></li>
                 </ul>
             </li>
             <li class="footer__item">
                 <h2 class="footer__title">Contacts</h2>
                 <ul class="footer__roster">
-                    <li class="footer__items"><a href="" class="footer__link">(406) 555-0120</a></li>
-                    <li class="footer__items"><a href="" class="footer__link">ul. Chodkiewicza Karola 111, Chorzów </a></li>
-                    <li class="footer__items"><a href="" class="footer__link">deanna.curtis@ <br class="footer__br"> example.com</a></li>
+                    <li class="footer__items"><a target="_blank" href="tel:4065550120" class="footer__link">(406)
+                            555-0120</a></li>
+                    <li class="footer__items"><a target="_blank" href="https://maps.app.goo.gl/2BTA83sEQZBHvDv18"
+                            class="footer__link">ul. Chodkiewicza Karola 111, Chorzów </a></li>
+                    <li class="footer__items"><a target="_blank" href="maito:deanna.curtis@example.com"
+                            class="footer__link">deanna.curtis@<br class="footer__br">example.com</a></li>
                 </ul>
             </li>
             <li class="footer__item">
@@ -293,7 +294,8 @@
                 </ul>
             </li>
         </ul>
-        <p class="footer__address">By using this website, you agree to the <span class="footer__span">Terms of Service</span> and <span class="footer__span">Privacy Policy</span></p>
+        <p class="footer__address">By using this website, you agree to the <span class="footer__span">Terms of
+                Service</span> and <span class="footer__span">Privacy Policy</span></p>
     </div>
 </footer>
 
