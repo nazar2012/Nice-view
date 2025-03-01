@@ -22,7 +22,7 @@
         }
     }
 
-    &__list {
+    &__span {
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -64,14 +64,14 @@
         }
     }
 
-    &__span {
+    &__list {
         position: absolute;
         border-radius: 8px;
         opacity: 0.8;
         background: $button-color;
         display: flex;
         flex-direction: column;
-        margin-right: 3px;
+        margin-right: 15px;
         margin-left: auto;
         align-items: center;
         padding: 20px 8px;
