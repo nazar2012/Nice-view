@@ -1,6 +1,6 @@
 .company {
     background: $background-color;
-    background-image: url(../img/background-company.webp);
+    background-image: url(../img/mobile/bg-company-mobile@1x.webp);
     margin-top: 100px;
     background-position: center;
     background-repeat: no-repeat;
@@ -8,9 +8,36 @@
     padding-bottom: 325px;
     width: 100%;
 
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img/mobile/bg-company-mobile@2x.webp);
+  }
+
+  
+
     @media screen and (min-width: 736px) {
         width: 100%;
+        background-image: url(../img/tablet/bg-company-tablet@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img/tablet/bg-company-tablet@2x.webp);
+  }
     }
+
+    @media screen and (min-width: 1176px) {
+        background-image: url(../img/desktop/bg-company-desktop@1x.webp);
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../img/desktop/bg-company-desktop@2x.webp);
+        }
+    }
+
     
 
     &__back {
