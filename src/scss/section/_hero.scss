@@ -6,12 +6,40 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
+  
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img/mobile/bg-main-mobl@2x.webp);
+  }
+
 
   @media screen and (min-width: 736px) {
     padding-top: 32px;
     padding-bottom: 100px;
+    background-image: url(../img/tablet/bg-main-tabl@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img/tablet/bg-main-tabl@2x.webp);
   }
+
+@media screen and (min-width: 1176px) {
+      background-image: url(../img/desktop/bg-main-desktop@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../img/desktop/bg-main-desktop@2x.webp);
+  }
+
+    }
+
+  }
+
+
 
   &__title {
     color: $accent-color;
