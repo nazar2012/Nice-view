@@ -95,6 +95,7 @@
     padding: 10px 60px;
     border-radius: 16px;
     background: $button-color;
+    cursor: pointer;
 
        @media screen and (min-width: 736px) {
       font-size: 24px;
@@ -105,17 +106,23 @@
 }
 
 .modal {
-  display: none;
+  display: none; 
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+  box-sizing: border-box; 
+   backdrop-filter: blur(8px);
+  transition: opacity 0.5s ease;
+  
 
   &.is-hidden {
     display: none;
@@ -123,13 +130,61 @@
 }
 
 .modal-content {
-  background: white;
-  width: 530px;
-  height: 624px;
-  padding: 20px;
+  background: $button-color;
+  width: auto; 
+  min-width: 200px;
+  max-width: 22%;
+  max-height: 90vh; 
+  padding: 60px;
   border-radius: 10px;
-  position: relative;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow-y: auto; 
+  box-sizing: border-box; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  background-color: #7a5c3e;
+  color: $button-color;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #5e4830;
 }
 
 .close {
@@ -140,10 +195,33 @@
   cursor: pointer;
 }
 
-.hero__btn {
-  cursor: pointer;
+
+@media (max-width: 1176px) {
+  .modal-content {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 736px) {
+  .modal-content {
+    max-width: 90%; 
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-content {
+    max-width: 90%;
+    min-width: 250px;
+    padding: 20px; 
+  }
+  input {
+    font-size: 14px;
+  }
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
 
- 
 
