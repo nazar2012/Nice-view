@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script type="module" crossorigin src="/Nice-view/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Nice-view/assets/index-7f7952d8.css">
+    <link rel="stylesheet" href="/Nice-view/assets/index-b36456da.css">
   </head>
   <body>
 
@@ -183,11 +183,12 @@
     <h1 class="apartament__title">Choose your apartment</h1>
 
     <ul class="apartament__list">
-      
+
       <li class="apartament__item">
         <img class="apartament__img" src="/Nice-view/assets/apartament-1ce170f5.png" alt="apartament">
         <p class="apartament__text">Type 1</p>
         <p class="apartament__subtitle">Total area 23 meters</p>
+
       </li>
 
       <li class="apartament__item">
@@ -202,6 +203,7 @@
         <img class="apartament__img" src="/Nice-view/assets/area-34c5fc33.png" alt="area">
         <p class="apartament__text">Type 3</p>
         <p class="apartament__subtitle">Total area 31 meters</p>
+
       </li>
     </ul>
     <div class="apartament__container">
@@ -211,7 +213,8 @@
 </section>
 
 <script>
-    document.getElementById("download-btn").addEventListener("click", function() {
+
+    document.getElementById("download-btn").addEventListener("click", function()  {
         const images = document.querySelectorAll(".apartament__img");
         images.forEach((image, index) => {
             const link = document.createElement("a");
@@ -222,6 +225,7 @@
             document.body.removeChild(link);
         });
     });
+
 </script>
     <section id="infrastructure" class="infrastructure">
     <div class="container">
