@@ -6,45 +6,54 @@
     </div>
 </section>
 
+
 <div class="modal is-hidden" id="modal">
     <div class="modal-content">
         <span class="close" id="close-modal">&times;</span>
-        <h2>Leave your contacts and we will contact you</h2>    
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Yuliia" required>
-
-            <label for="phone">Telephone</label>
-            <input type="tel" id="phone" placeholder="+380" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Contact@gmail.com" required>
-
-            <button type="submit" class="submit-btn">Contact us</button>
-        </form>
+        <div class="modal-body">
+            <img src="image.png" alt="Person reading" class="modal-image">
+            <h2 class="modal-title">Download the catalog</h2>
+            <p class="modal-text">We will send you more photos, videos and information by mail</p>
+            <form id="emailForm" class="modal-form">
+                <div class="input-container">
+                    <input type="email" id="emailInput" class="modal-input" placeholder="EMAIL ADDRESS" required>
+                    <button type="submit" class="modal-button">&rarr;</button>
+                </div>
+            </form>
+            <div id="successMessage" class="hidden">
+                <h2 class="modal-success-title">GREAT!</h2>
+                <p class="modal-success-text">NOW CHECK YOUR MAIL</p>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
-document.getElementById("open-modal").addEventListener("click", function() {
-    const modal = document.getElementById("modal");
-    modal.classList.remove("is-hidden");
-    modal.style.display = "flex"; 
-});
+    document.getElementById("open-modal").addEventListener("click", function() {
+        const modal = document.getElementById("modal");
+        modal.classList.remove("is-hidden");
+        modal.style.display = "flex"; 
+    });
 
-document.getElementById("close-modal").addEventListener("click", function() {
-    const modal = document.getElementById("modal");
-    modal.classList.add("is-hidden");
-    modal.style.display = "none"; 
-});
-document.getElementById("modal").addEventListener("click", function(event) {
-    if (event.target === this) {
-        this.classList.add("is-hidden");
-    }
-});
+    document.getElementById("close-modal").addEventListener("click", function() {
+        const modal = document.getElementById("modal");
+        modal.classList.add("is-hidden");
+        modal.style.display = "none"; 
+    });
 
+    document.getElementById("modal").addEventListener("click", function(event) {
+        if (event.target === this) {
+            this.classList.add("is-hidden");
+            this.style.display = "none";
+        }
+    });
+
+    document.getElementById("emailForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        document.getElementById("emailForm").style.display = "none";
+        document.getElementById("successMessage").classList.remove("hidden");
+    });
 </script>
-
 
 
 
