@@ -3,11 +3,12 @@
     <h1 class="apartament__title">Choose your apartment</h1>
 
     <ul class="apartament__list">
-      
+
       <li class="apartament__item">
         <img class="apartament__img" src="./img/apartament.png" alt="apartament">
         <p class="apartament__text">Type 1</p>
         <p class="apartament__subtitle">Total area 23 meters</p>
+
       </li>
 
       <li class="apartament__item">
@@ -22,6 +23,7 @@
         <img class="apartament__img" src="./img/area.png" alt="area">
         <p class="apartament__text">Type 3</p>
         <p class="apartament__subtitle">Total area 31 meters</p>
+
       </li>
     </ul>
     <div class="apartament__container">
@@ -31,7 +33,8 @@
 </section>
 
 <script>
-    document.getElementById("download-btn").addEventListener("click", function() {
+
+    document.getElementById("download-btn").addEventListener("click", function()  {
         const images = document.querySelectorAll(".apartament__img");
         images.forEach((image, index) => {
             const link = document.createElement("a");
@@ -42,4 +45,5 @@
             document.body.removeChild(link);
         });
     });
+
 </script>
