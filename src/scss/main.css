@@ -236,10 +236,31 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/mobile/bg-main-mobl@2x.webp);
+  }
+}
 @media screen and (min-width: 736px) {
   .hero {
     padding-top: 32px;
     padding-bottom: 100px;
+    background-image: url(../img/tablet/bg-main-tabl@1x.webp);
+  }
+}
+@media screen and (min-width: 736px) and (min-device-pixel-ratio: 2), screen and (min-width: 736px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 736px) and (min-resolution: 192dpi), screen and (min-width: 736px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/tablet/bg-main-tabl@2x.webp);
+  }
+}
+@media screen and (min-width: 736px) and (min-width: 1176px) {
+  .hero {
+    background-image: url(../img/desktop/bg-main-desktop@1x.webp);
+  }
+}
+@media screen and (min-width: 736px) and (min-width: 1176px) and (min-device-pixel-ratio: 2), screen and (min-width: 736px) and (min-width: 1176px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 736px) and (min-width: 1176px) and (min-resolution: 192dpi), screen and (min-width: 736px) and (min-width: 1176px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/desktop/bg-main-desktop@2x.webp);
   }
 }
 .hero__title {
@@ -298,6 +319,7 @@ body {
   padding: 10px 60px;
   border-radius: 16px;
   background: #FCFCFB;
+  cursor: pointer;
 }
 @media screen and (min-width: 736px) {
   .hero__btn {
@@ -305,6 +327,167 @@ body {
   }
 }
 
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: #EDE9E3;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: left;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #7E6D53;
+}
+
+.modal-image {
+  width: 120px;
+  float: left;
+  margin-right: 20px;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #7E6D53;
+}
+
+.modal-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #7E6D53;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #5F4B3A;
+  border-radius: 12px;
+  padding: 10px;
+  background: white;
+}
+
+.modal-input {
+  flex: 1;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+}
+
+.modal-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #7E6D53;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.modal-success-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #7E6D53;
+}
+
+.modal-success-text {
+  font-size: 20px;
+  color: #7E6D53;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+    max-width: 90%;
+  }
+  .modal-image {
+    width: 80px;
+    margin-right: 10px;
+  }
+  .modal-title {
+    font-size: 22px;
+  }
+  .modal-text {
+    font-size: 16px;
+  }
+  .modal-input {
+    font-size: 14px;
+  }
+  .modal-button {
+    font-size: 20px;
+  }
+}
 .company {
   background: #EDE9E3;
   background-image: url(../img/mobile/bg-company-mobile@1x.webp);
@@ -533,6 +716,7 @@ body {
   justify-content: center;
   height: 45px;
   width: 200px;
+  cursor: pointer;
 }
 
 .infrastructure {
