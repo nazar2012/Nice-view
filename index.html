@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nice view</title>
-    <link rel="icon" href="/Nice-view/assets/logo-cdc76769.png">
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <script type="module" crossorigin src="/Nice-view/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/Nice-view/assets/index-b36456da.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nice view</title>
+  <link rel="icon" href="/Nice-view/assets/logo-cdc76769.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  
+  <script type="module" crossorigin src="/Nice-view/commonHelpers.js"></script>
+  <link rel="stylesheet" href="/Nice-view/assets/index-6e9c887f.css">
+</head>
 
-    <!-- Loads the specified .html file -->
-    <header class="header">
+<body>
+
+  <!-- Loads the specified .html file -->
+  <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
     <div class="container header__div">
         <a href="../index.html" class="header__title">NICE VIEW</a>
         <ul class="header__list">
@@ -48,8 +53,8 @@
         </div>
     </div>
 </header>
-    
-    <section class="hero">   
+  
+  <section class="hero">
     <div class="container hero__div">
         <h1 class="hero__title">Nice view</h1>
         <p class="hero__text">For your comfortable life with your family</p>
@@ -62,7 +67,7 @@
     <div class="modal-content">
         <span class="close" id="close-modal">&times;</span>
         <div class="modal-body">
-            <img  class="modal-image" src="../img/hero.modalka.png"  alt="Person reading">
+            <img class="modal-image" src="/Nice-view/assets/hero.modalka-f973d915.png" alt="Person reading">
             <h2 class="modal-title" id="modalTitle">Download the catalog</h2>
             <p class="modal-text" id="modalText">We will send you more photos,<br>videos and information by mail</p>
             <form id="emailForm" class="modal-form">
@@ -88,7 +93,7 @@
         successMessage.classList.add("hidden");
     }
 
-    document.getElementById("open-modal").addEventListener("click", function() {
+    document.getElementById("open-modal").addEventListener("click", function () {
         resetModal();
         const modal = document.getElementById("modal");
         modal.classList.remove("is-hidden");
@@ -96,7 +101,7 @@
         modal.style.display = "flex";
     });
 
-    document.getElementById("close-modal").addEventListener("click", function() {
+    document.getElementById("close-modal").addEventListener("click", function () {
         const modal = document.getElementById("modal");
         modal.classList.add("fade-out");
         setTimeout(() => {
@@ -106,7 +111,7 @@
         }, 300);
     });
 
-    document.getElementById("modal").addEventListener("click", function(event) {
+    document.getElementById("modal").addEventListener("click", function (event) {
         if (event.target === this) {
             this.classList.add("fade-out");
             setTimeout(() => {
@@ -117,7 +122,7 @@
         }
     });
 
-    document.getElementById("emailForm").addEventListener("submit", function(event) {
+    document.getElementById("emailForm").addEventListener("submit", function (event) {
         event.preventDefault();
         document.getElementById("emailForm").style.display = "none";
         document.getElementById("modalTitle").style.display = "none";
@@ -127,19 +132,7 @@
         successMessage.classList.add("fade-in");
     });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-  
-    <section class="company">
+  <section class="company">
     <div class="company__back">
     <div class="container">
         <div class="company__group">
@@ -178,7 +171,7 @@
     </div>
     </div>
 </section>
-    <section id="apartament" class="apartament">
+  <section id="apartament" class="apartament">
   <div class="container">
     <h1 class="apartament__title">Choose your apartment</h1>
 
@@ -227,7 +220,7 @@
     });
 
 </script>
-    <section id="infrastructure" class="infrastructure">
+  <section id="infrastructure" class="infrastructure">
     <div class="container">
         <h2 class="infrastructure__logo">Infrastructure</h2>
         <div class="infrastructure__span">
@@ -254,7 +247,7 @@
     </div>
     </div>
 </section>
-    <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery">
     <div class="container">
         <h2 class="gallery__title">Gallery</h2>
         <div class="gallery__position">
@@ -317,7 +310,7 @@
     </div>
 
 </section>
-    <section id="touch" class="touch">
+  <section id="touch" class="touch">
     <div class="container">
         <h3 class="touch__logo">Get in touch!</h3>
         <p class="touch__text">Contact us for a quote.</p>
@@ -346,7 +339,7 @@
         </div>
     </div>
 </section>
-    <footer class="footer">
+  <footer class="footer">
     <div class="container">
         <ul class="footer__nav">
             <li class="footer__item">
@@ -404,7 +397,12 @@
     </div>
 </footer>
 
-    
-    
-  </body>
+  
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
 </html>
