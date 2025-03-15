@@ -1,4 +1,4 @@
-<section class="hero">   
+<section class="hero">
     <div class="container hero__div">
         <h1 class="hero__title">Nice view</h1>
         <p class="hero__text">For your comfortable life with your family</p>
@@ -11,7 +11,7 @@
     <div class="modal-content">
         <span class="close" id="close-modal">&times;</span>
         <div class="modal-body">
-            <img  class="modal-image" src="../img/hero.modalka.png"  alt="Person reading">
+            <img class="modal-image" src="./img/hero.modalka.png" alt="Person reading">
             <h2 class="modal-title" id="modalTitle">Download the catalog</h2>
             <p class="modal-text" id="modalText">We will send you more photos,<br>videos and information by mail</p>
             <form id="emailForm" class="modal-form">
@@ -37,7 +37,7 @@
         successMessage.classList.add("hidden");
     }
 
-    document.getElementById("open-modal").addEventListener("click", function() {
+    document.getElementById("open-modal").addEventListener("click", function () {
         resetModal();
         const modal = document.getElementById("modal");
         modal.classList.remove("is-hidden");
@@ -45,7 +45,7 @@
         modal.style.display = "flex";
     });
 
-    document.getElementById("close-modal").addEventListener("click", function() {
+    document.getElementById("close-modal").addEventListener("click", function () {
         const modal = document.getElementById("modal");
         modal.classList.add("fade-out");
         setTimeout(() => {
@@ -55,7 +55,7 @@
         }, 300);
     });
 
-    document.getElementById("modal").addEventListener("click", function(event) {
+    document.getElementById("modal").addEventListener("click", function (event) {
         if (event.target === this) {
             this.classList.add("fade-out");
             setTimeout(() => {
@@ -66,7 +66,7 @@
         }
     });
 
-    document.getElementById("emailForm").addEventListener("submit", function(event) {
+    document.getElementById("emailForm").addEventListener("submit", function (event) {
         event.preventDefault();
         document.getElementById("emailForm").style.display = "none";
         document.getElementById("modalTitle").style.display = "none";
@@ -76,15 +76,3 @@
         successMessage.classList.add("fade-in");
     });
 </script>
-
-
-
-
-
-
-
-
-
-
-
-  
