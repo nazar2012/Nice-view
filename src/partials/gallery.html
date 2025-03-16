@@ -3,11 +3,14 @@
         <h2 class="gallery__title">Gallery</h2>
         <div class="gallery__position">
             <div class="gallery__group">
-                <svg class="gallery__svg">
+                <!-- Левая стрелка -->
+                <svg class="gallery__svg left-arrow">
                     <use class="arrow" href="./img/symbol-defs.svg#left"></use>
                 </svg>
+
+                <!-- Список изображений -->
                 <ul class="gallery__list">
-                    <li class="gallery__item">
+                    <li class="gallery__item active">
                         <picture>
                             <source
                                 srcset="./img/desktop/gallery-left-desktop@1x.webp 1x, ./img/desktop/gallery-left-desktop@2x.webp 2x"
@@ -21,7 +24,7 @@
                             <img src="./img/build.webp" alt="firstbuild" class="gallery__foto">
                         </picture>
                     </li>
-                    <li class="gallery__itemcenter">
+                    <li class="gallery__item gallery__itemcenter">
                         <picture>
                             <source
                                 srcset="./img/desktop/gallery-center-desktop@1x.webp 1x, ./img/desktop/gallery-center-desktop@2x.webp 2x"
@@ -41,7 +44,7 @@
                                 srcset="./img/desktop/gallery-right-desktop@1x.webp 1x, ./img/desktop/gallery-right-desktop@2x.webp 2x"
                                 media="(min-width: 1176px)">
                             <source
-                                srcset="./img/tablet/gallery-right-tablet@1x.webp 1x ./img/tablet/gallery-right-tablet@2x.webp 2x"
+                                srcset="./img/tablet/gallery-right-tablet@1x.webp 1x, ./img/tablet/gallery-right-tablet@2x.webp 2x"
                                 media="(min-width: 736px)">
                             <source
                                 srcset="./img/mobile/gallery-right-mobile@1x.webp 1x, ./img/mobile/gallery-right-mobile@2x.webp 2x"
@@ -50,14 +53,15 @@
                         </picture>
                     </li>
                 </ul>
-                <svg class="gallery__svg">
+
+                <!-- Правая стрелка -->
+                <svg class="gallery__svg right-arrow">
                     <use class="arrow" href="./img/symbol-defs.svg#right"></use>
                 </svg>
             </div>
-            <svg class="gallery__navigation">
-                <use class="gallery__three" href="./img/symbol-defs.svg#three"></use>
-            </svg>
         </div>
     </div>
-
 </section>
+
+<!-- Подключаем скрипт -->
+<script src="../js/slider.js" defer></script>
